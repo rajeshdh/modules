@@ -3,24 +3,24 @@ var tape = require('tape')
 
 var fixtures = [
   {
-    "array": ['a', 'b', 'c', 'd', 'e', 'f'],
-    "num": '',
-    "expected": 'f'
+    array: ['a', 'b', 'c', 'd', 'e', 'f'],
+    num: '',
+    expected: 'f'
   },
   {
-    "array": ['a', 'b', 'c', 'd', 'e', 'f'],
-    "num": 1,
-    "expected": 'f'
+    array: ['a', 'b', 'c', 'd', 'e', 'f'],
+    num: 1,
+    expected: 'f'
   },
   {
-    "array": ['a', 'b', 'c', 'd', 'e', 'f'],
-    "num": 3,
-    "expected": ['d', 'e', 'f']
+    array: ['a', 'b', 'c', 'd', 'e', 'f'],
+    num: 3,
+    expected: ['d', 'e', 'f']
   },
   {
-    "array": [],
-    "num": '',
-    "expected": null
+    array: [],
+    num: '',
+    expected: null
   }
 ]
 fixtures.forEach(function (f) {
@@ -31,7 +31,6 @@ fixtures.forEach(function (f) {
     t.deepEqual(actual, f.expected)
   })
 })
-
 
 tape('throws an error if invalid arguments are passed', function (t) {
   t.plan(3)

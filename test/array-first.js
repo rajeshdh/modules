@@ -1,8 +1,7 @@
-'use strict';
+'use strict'
 
 var tape = require('tape')
-var first = require('../array-first');
-
+var first = require('../array-first')
 
 tape('throw an error if the value passed is not an array', function (t) {
   t.plan(1)
